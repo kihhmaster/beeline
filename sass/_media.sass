@@ -1,0 +1,223 @@
+@import "vars"
+
+/*==========	Desktop First	==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.advantages_item
+		max-width: 450px
+
+	.advantages_text
+		line-height: 1.2
+	.advantages_img
+		img
+			padding-left: 10px
+			width: 115px
+	.advantages_text
+		ol
+			margin-right: 20px
+			li
+				white-space: normal
+
+// ≥992px
++media-breakpoint-down(md)
+	.advantages
+		display: flex
+		flex-direction: column
+		align-items: center
+	.advantages_item
+		width: 100%
+		max-width: 650px
+		margin-right: 0
+		margin-left: 0
+
+	.advantages_item_3
+		margin-bottom: 0
+	.text_topline
+		.p_1
+			line-height: 1.1
+	.p_2
+		margin-top: $gutter/3
+	.button_topline
+		top: $gutter/2
+
+// ≥768px
++media-breakpoint-down(sm)
+	.section_4, .section_5, footer
+		padding-top: 0
+	.section_6
+		.answer_text_start
+			padding-top: 0
+		.answer_container
+			margin-top: 10px
+	.logo
+		a
+			img
+				display: none
+	.top-line
+		display: flex
+		width: 100%
+		height: 40px
+
+	.contact
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: start
+		height: 40px
+		.messenger
+			position: relative
+			right: 0
+			top: 0
+			margin: 10px 0 0 0
+		.telefon
+			position: relative
+			right: 0
+			top: 0
+			padding: 0
+	.telefon_img
+		display: none
+	.button_topline
+		top: 0
+		margin-bottom: $gutter/2
+	.advantages_text
+		ol
+			display: block
+			margin: 0
+			li
+	.tariffs_text_start
+		line-height: 1.1
+
+	.connect_tariff
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		flex-wrap: wrap
+	.connect_item_left
+		border-left: 2px solid #9e9e9e
+		border-radius: 0 25px 25px 0
+		padding-top: $gutter/2
+		p
+			text-align: left
+			font-family: MyriadSetPro, sans-serif
+			margin: $gutter
+			margin-top: 0
+			margin-bottom: $gutter/2
+	.connect_item
+		width: 100%
+		border-right: none
+		&:first-child
+			padding-top: 0
+	.connect_item_right
+		margin-left: 2px
+		padding-top: $gutter/2
+		align-self: flex-start
+	.compare_text_start
+		margin-bottom: 0
+
+	.compare_item
+		&:first-child
+			display: none
+	.footer__wrapp
+		display: flex
+		flex-direction: column-reverse
+		justify-content: center
+		align-items: center
+	footer
+		.compare_text_start
+			margin-top: 0
+
+	.contacts
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.form__footer
+		margin-top: 20px
+
+// ≥576px
++media-breakpoint-down(xs)
+	.answer_container
+		summary
+			font-size: 14px
+	.tariffs_text_start
+		padding-top: $gutter/2
+		font-size: 32px
+		line-height: 1
+	.answer_text_start
+		font-size: 32px
+	.advantages_text_start
+		padding-top: $gutter/2
+		font-size: 32px
+		line-height: 1
+	.answer_container
+		margin-top: $gutter
+	.content_text_start
+		padding-top: $gutter/2
+		font-size: 32px
+		line-height: 1
+	.connect_item
+		p
+			span
+				font-size: 22px
+				line-height: 0.7
+	.advantages_item
+		display: flex
+		flex-direction: column
+		justify-content: center
+		min-height: 100px
+		padding-right: 0
+		img
+			display: none
+			margin-right: 0
+			margin-left: 10px
+		p
+			margin: 8px
+			font-size: 20px
+			line-height: 1.1
+	.advantages_text
+		padding-right: 0
+	.advantages_row
+		margin: 0
+	.advantages_img
+		img
+			width: 110px
+	.advantages_item_2
+		img
+			margin-right: 15px
+	.compare_text_start
+		padding-top: $gutter/2
+		font-size: 32px
+		line-height: 1
+	.compare_item_link
+		margin-top: $gutter/2
+		min-width: 120px
+		a
+			font-size: 16px
+	.compare_item
+		min-height: 80px
+		line-height: 1
+	.compare_text_finish
+		line-height: 1.2
+	.contact
+		.messenger
+			position: relative
+			right: 0
+		.telefon
+			position: relative
+			span
+				font-size: 16px
+
+/*==========	Mobile First	==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

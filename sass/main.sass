@@ -1,0 +1,621 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+a
+	color: $accent1
+	&:hover, &:focus
+		color: $accent2
+		text-decoration: underline
+
+// section_1
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+.container-fluid
+	max-width: 1300px
+	padding: 0 $gutter
+
+.text_topline
+	.p_1
+		font-family: $default-font
+		font-weight: 600
+	.p_2
+		font-family: $default-font
+		font-weight: 600
+.top-line
+	height: 100px
+.logo
+	a
+		img
+			width: 300px
+			padding: 0 10px 0 0
+			margin: 0 10px 0 0
+.messenger
+	position: absolute
+	margin: 25px 0
+	display: inline
+	right: 250px
+	font-weight: 800
+	a
+		color: $accent1
+		img
+			margin: 0
+			padding: 0
+			height: 30px
+			width: 30px
+.telefon
+	position: absolute
+	display: inline-block
+	right: 40px
+	top: 15px
+	padding: 1px 5px
+	font-size: 25px
+	font-weight: 800
+	a
+		color: $accent1
+		span
+			height: 25px
+
+// .hide
+// 		display: none 
+// .show
+// 	display: inline
+.text_topline
+	p
+		color: #ffffff
+		text-align: left
+		margin-left: 13px
+		font-weight: 800
+		line-height: 1.3
+.p_1
+	margin-top: 20px
+	font-size: 36px
+	span
+		color: $accent1		
+.p_2
+	margin-top: $gutter*2
+	font-size: 20px
+.button_topline
+	position: relative
+	top: $gutter
+
+.button_topline_layer
+	position: absolute
+	z-index: 2
+	top: $gutter
+	
+.button
+	display: inline-block
+	border: none
+	color: $text
+	text-decoration: none
+	background-color: $accent1
+	padding: 15px 45px
+	font-size: 13px
+	font-family: $default-font
+	text-transform: uppercase
+	font-weight: bold
+	letter-spacing: normal
+	border-radius: 30px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		bottom: 0
+		width: 100%
+		background-color: darken($accent1, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent1, 10%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent1, 5%)
+		&::after
+			opacity: .32
+.telefon_img
+	img
+		display: block
+		margin-left: auto
+		max-width: 375px
+
+// section_2
+
+.section_2
+	background-color: $accent1
+.advantages_text_start
+	text-align: center
+	font-size: 48px
+	padding-top: $gutter
+	margin-bottom: 0
+
+
+.advantages
+
+.advantages_item
+	display: block
+	box-sizing: border-box
+	border-radius: 10px
+	background-color: #ffffff
+	border: 1px solid #000
+	max-width: 550px
+	width: 50%
+	height: 200px
+	padding-right: 20px
+	margin-top: $gutter
+	margin-right: auto
+	margin-left: auto	
+	p
+		text-align: center
+		font-size: 24px
+		margin-top: 10px
+		margin-bottom: $gutter/4
+	
+.advantages_img
+	padding: 0 15px
+	bottom: 20px
+	img
+		
+		margin-right: $gutter/2
+		padding: 15px
+		float: left
+		width: 130px
+.advantages_text
+	font-family: $default-font2
+	font-weight: 400
+	font-size: 18px
+	margin-top: 20px
+	width: 100%
+	line-height: 1.25
+	font-weight: 300
+	margin-right: auto
+	margin-left: auto
+	ol
+			margin-right: 300px
+			li
+				white-space: nowrap
+.advantages_item_2
+	img
+		margin-right: 33px
+.advantages_item_3
+	margin-bottom: $gutter
+.advantages_item_4
+	margin-bottom: $gutter
+
+
+
+
+// tariffs...
+
+.section_3
+	
+	background-color: lighten(#d1d1d1, 12%)
+.tariffs_text_start
+	text-align: center
+	font-size: 48px
+	padding-top: $gutter
+.tariffs_item_conteiner
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-around
+	::last-child
+	
+
+.tariffs_item
+	
+	margin-bottom: $gutter
+	background-color: #fff
+	width: 275px
+	height: 605px
+	box-shadow: 5px 3px 18px 4px #00000038
+	
+.tariffs_img
+	img
+		width: 100%
+.tariffs_text
+	margin-right: auto
+	margin-left: auto
+	padding: 0 15px
+	padding-top: 5px
+	p
+		line-height: 1.17
+		font-family: $default-font2
+		font-weight: 400
+		font-size: 18px
+		color: $accent2
+		margin: 0
+		span
+			font-family: $default-font
+			color: $text
+			font-size: 25px
+		
+.tariffs_row
+	margin-top: 20px
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+.tariffs_row_underline
+	padding-bottom: 10px
+	border-bottom: 1px solid $accent2
+.value_item_1
+	color: $text
+	font-size: 25px
+	img
+		width: 50px
+	div
+		color: $accent2
+		font-size: 16px
+		line-height: 1.2
+	p
+		line-height: 1.2
+	span
+		font-size: 12px
+		text-align: right
+
+.value_item_2
+	color: $accent2
+	p
+		text-align: right
+		line-height: 1.2
+		span
+			color: #ff0000
+		
+.button_tariffs_1
+	margin-top: $gutter/2
+	font-size: 14px
+	text-transform: lowercase
+	padding: 8px 15px
+	letter-spacing: normal
+.button_tariffs_2
+	margin-top: $gutter/2
+	color: #1481b4
+	font-size: 18px
+	padding-top: 5px
+	text-decoration: underline
+	
+
+// connect tariff...
+.section_4
+	margin: 0
+	
+.content_text_start
+	text-align: center
+	font-size: 48px
+	margin-buttom: $gutter auto
+.connect_tariff
+	display: flex
+	flex-direction: column
+	align-items: center
+	flex-wrap: wrap
+	width: 100%
+	max-width: 800px
+	margin-right: auto
+	margin-left: auto
+	
+		
+.connect_item
+	width: 50%
+	height: auto
+	min-height: 100px
+	// background-color: #fff
+	border-bottom: 2px solid #9e9e9e
+	margin: 0
+	box-sizing: border-box
+	p		
+		font-family: $default-font2
+		font-weight: 400
+		font-size: 18px
+		line-height: 1.3
+		span
+			font-family: $default-font
+			margin: 0	
+			font-size: 24px
+	&:last-child
+	&:first-child
+		p
+			span
+				padding-top: 0
+		
+
+	
+.connect_item_left
+	margin: 0 2px
+	align-self: flex-start
+	border-right: 2px solid #9e9e9e
+	border-radius: 25px  0 0 25px
+	
+	p	
+		font-family: MyriadSetPro, sans-serif
+		text-align: right
+		margin: $gutter
+		margin-top: 0
+		margin-bottom: $gutter/2
+.connect_item_right
+	align-self: flex-end
+	border-left: 2px solid #9e9e9e
+	border-radius: 0 25px 25px 0
+	p
+		font-family: MyriadSetPro, sans-serif
+		text-align-last: left
+		margin: $gutter
+		margin-top: 0
+		margin-bottom: $gutter/2
+
+// compare.... section_5
+.section_5
+	background-color: #000
+.compare_text_start
+	color: #fff
+	text-align: center
+	font-size: 48px
+	margin: $gutter/2 auto
+	margin-bottom: 0
+.compare_container
+	
+.compare_row
+	display: flex
+	justify-content: center
+	align-items: center
+
+#compare_item_1
+	.compare_item
+		
+		text-align: center
+		border: none
+		background-color: $accent1
+		p
+			font-family: $default-font
+			
+			color: #000
+			font-size: 22px
+.compare_item_link
+	color: #fff
+	min-width: 200px
+	margin-bottom: $gutter/2
+	text-align: center
+	max-width: 100px
+	a
+		font-size: 24px
+		color: #fff
+		&:hover, &:focus 
+			color: darken($accent2, 10%)
+			text-decoration: underline
+
+
+.compare_item
+	font-family: $default-font2
+	font-weight: 400
+	font-size: 18px
+	border-radius: 
+	background-color: lighten(#d1d1d1, 18%)
+	max-width: 350px	 
+	border: 1px solid lighten(#d1d1d1, 10%)
+	text-align: center
+	margin: 0
+	padding: $gutter/2
+	p
+		margin: 0
+	&:first-child
+		text-align: left
+		background-color: lighten(#d1d1d1,17%)
+	&:last-child
+		background-color: lighten(#d1d1d1, 17%)
+.compare_text_finish
+	color: #fff
+	max-width: 700px
+	text-align: center
+	line-height: 1.3
+	font-size: 26px
+	margin: $gutter/2 auto
+	margin-bottom: 0
+	p
+		span
+			color: $accent1
+.button_compare
+	margin-bottom: 20px
+	a
+		max-with: 200px
+		
+//section_6
+.section_6
+	background-color: $accent1
+	display: flex
+	flex-direction: column
+
+.answer_text_start
+	text-align: center
+	font-size: 48px
+	padding-top: $gutter
+	margin-bottom: 0
+.answer_container
+	margin-top: $gutter
+	margin-right: auto
+	margin-left: auto
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	font-family: MyriadSetPro, sans-serif
+	font-weight: 800
+	font-size: 18px
+	border-radius: 
+	background-color: lighten(#d1d1d1, 18%)
+	max-width: 600px	 
+	text-align: center
+	padding: 0
+	margin-bottom: $gutter
+details
+	border: none
+	width: 100%
+	display: flex
+	justify-content: start
+details[open]
+	border: none
+	text-align: left
+	.answer_more
+		margin-top: 20px
+	
+
+summary
+	outline: none
+	text-align: left
+.answer_item
+	display: flex
+	justify-content: start
+	padding: 10px
+	width: 100%
+	border: 2px solid lighten(#d1d1d1, 2%)
+	border-bottom: 0
+	p
+		
+		margin: $gutter/2
+	a
+		margin: $gutter/2
+		margin-right: 0
+.hidden_row
+	clear: both
+	display: none
+.button_answerclose_1
+	display: none
+.more-splash 
+	animation-name: splash
+	animation-duration: 1.7s
+.answer_more
+	margin: $gutter/2
+	margin-top: 0
+	font-family: $default-font2
+	font-weight: 400
+	font-size: 18px
+	line-height: 1.3
+.answer_item p i
+	position: absolute
+	margin: 10px
+	width: 60px
+	height: 50px
+	color: #000
+.button_answer	
+	right: 0px
+	width: 40px
+	height: 40px
+	padding: 0
+	border-radius: 100px
+	text-align: center
+	line-height: 38px
+.fa-sort-desc:before
+	width: 35px
+	height: 35px
+		
+.open.button:hover	
+		background-color: #000
+
+.section_4, .section_5
+	padding-top: $gutter
+// footer
+footer
+	background: #000
+	text-align: center
+	padding-bottom: $gutter
+	padding-top: $gutter
+.footer__wrapp
+	display: flex
+	justify-content: center
+	align-items: start
+	width: 100%
+	height: 250px
+
+	margin: $gutter 0
+footer
+	.compare_text_start
+		margin-top: 0
+.contacts
+	display: flex
+	flex-direction: column
+	justify-content: start
+	align-items: start
+	margin-right: $gutter
+.cont__mail, .cont__tel
+	color: #fff
+	font-size: 24px
+.form__footer
+	display: flex
+	flex-direction: column
+	input
+		background: #000
+		border: none
+		border-bottom: 2px solid #333
+		margin-bottom: $gutter/2
+	  color: #333
+		height: 50px
+	textarea
+		background: #000
+		border: none
+		border-bottom: 2px solid #333
+		margin-bottom: $gutter/2
+	  color: #333
+		height: 50px
+	textarea[placeholder]
+		color: #333
+	input[placeholder]
+			color: #333
+
+
+	
+
+	
+
+
+
+
+		
+
+
+
+
+
+@import "media" // Always at the end
